@@ -1,0 +1,67 @@
+/* can take default all is o */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+
+}
+
+
+/* whole parent div calculator comes to the center */
+.container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+
+    border-radius: 8px 8px 0 0;
+    background:rgb(19, 18, 18);
+    background-image: url("https://images.pexels.com/photos/1831234/pexels-photo-1831234.jpeg?auto=compress&cs=tinysrgb&w=600");
+ box-shadow: 2px 2px 8px brown;
+}
+
+.result{
+    background-color: black;
+    color: azure;
+    border-radius: 8px 8px 0 0;
+    padding: 20px;
+    font-size: 20px;
+}
+.buttons{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.row{
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+.row button{
+    width: 75px;
+    height: 75px;
+    border-radius: 0 0 0 0;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    text-align: center;
+    /*  when we click button it can hover the button thats why transition */
+    transition: 0.2s all linear;
+}
+
+.row button:hover{
+    background-color: chocolate;
+}
+
+#equal{
+    width: 150px;
+}
+
+#dot{
+    font-weight: 600;
+}
